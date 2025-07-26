@@ -1,136 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrowide - Your Farming Partner</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agrowide - Agriculture Solutions</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5f5f5;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #f4f4f4; color: #333; }
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 15px;
+      background: #2e7d32;
+      padding: 20px;
+      color: #fff;
       text-align: center;
     }
-
     nav {
-      background-color: #333;
-      overflow: hidden;
+      margin-top: 10px;
     }
-
     nav a {
-      float: left;
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
+      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
-
-    nav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #4CAF50;
+    .hero {
+      background: url('https://images.unsplash.com/photo-1560807707-8cc77767d783') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: white;
-      text-align: center;
-      padding: 10px;
-      position: relative;
-      bottom: 0;
-      width: 100%;
-    }
-
-    form {
-      background-color: white;
+      text-shadow: 1px 1px 5px #000;
+      font-size: 2em;
       padding: 20px;
-      max-width: 500px;
-      margin: auto;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
-
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      height: 150px;
+      object-fit: cover;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
     input, textarea {
       width: 100%;
+      margin-top: 10px;
       padding: 10px;
-      margin-top: 8px;
-      margin-bottom: 16px;
       border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical;
+      border-radius: 6px;
     }
-
     button {
-      background-color: #4CAF50;
+      margin-top: 15px;
+      background: #2e7d32;
       color: white;
-      padding: 12px 20px;
+      padding: 10px 20px;
       border: none;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
     }
-
-    button:hover {
-      background-color: #45a049;
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Welcome to Agrowide</h1>
-    <p>Your trusted partner for seeds, fertilizers & pesticides</p>
+    <h1>Agrowide</h1>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="hero">
+    <div>Empowering Agriculture with Quality Products</div>
+  </div>
 
-  <section id="home">
-    <h2>About Us</h2>
-    <p>Agrowide is committed to empowering farmers with quality agricultural products including high-yield seeds, effective fertilizers, and safe pesticides. Our mission is to grow with you.</p>
+  <section class="section" id="products">
+    <h2 style="margin-bottom:20px;">Our Products</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602526211678-3b1b90eec23d" alt="Seeds">
+        <h3>High Quality Seeds</h3>
+        <p>Certified, high-germination seeds for better yield.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1602526212336-e917c7ecb71f" alt="Fertilizers">
+        <h3>Fertilizers</h3>
+        <p>Nutrient-rich fertilizers to boost crop growth.</p>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1581092780747-fbcba5c47b7b" alt="Pesticides">
+        <h3>Pesticides</h3>
+        <p>Protect your crops with safe and effective solutions.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="products">
-    <h2>Our Products</h2>
-    <ul>
-      <li>🌱 Hybrid Seeds</li>
-      <li>🌾 Organic & Chemical Fertilizers</li>
-      <li>🧪 Eco-Friendly Pesticides</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
+  <section class="section" id="contact">
+    <h2 style="margin-bottom:20px;">Contact Us</h2>
     <form action="https://formspree.io/f/mzzvrkeo" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required>
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="4" required></textarea>
 
       <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Agrowide. All rights reserved.</p>
+    &copy; 2025 Agrowide. All rights reserved.
   </footer>
-
 </body>
-</html>
+  </html>
