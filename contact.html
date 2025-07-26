@@ -1,56 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Contact Us - Agrowide</title>
-  <style>
-    body {
-      font-family: Arial;
-      padding: 30px;
-      background-color: #f9f9f9;
-    }
-    form {
-      max-width: 400px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #2E8B57;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <title>Contact - Agrowide</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form action="https://formspree.io/f/mzzvrkeo" method="POST">
+      <label>Name:</label><br>
+      <input type="text" name="name" required><br><br>
 
-  <h2 style="text-align:center;">Contact Us</h2>
+      <label>Email:</label><br>
+      <input type="email" name="email" required><br><br>
 
-  <form action="https://formspree.io/f/mwkgyqgj" method="POST">
-    <label>Your Name</label>
-    <input type="text" name="name" required>
+      <label>Message:</label><br>
+      <textarea name="message" required></textarea><br><br>
 
-    <label>Your Email</label>
-    <input type="email" name="email" required>
-
-    <label>Your Message</label>
-    <textarea name="message" rows="5" required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-
-</body>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
 </html>
