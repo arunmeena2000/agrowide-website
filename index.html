@@ -22,6 +22,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Agrowide - Agriculture Solutions</title>
   <style>
+    <style>
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
     * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
     body { background: #f4f4f4; color: #333; }
     header {
@@ -106,6 +129,37 @@
   </style>
 </head>
 <body>
+  <section id="hero" style="
+  background-image: url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+">
+  <h1 style="font-size: 3rem; text-shadow: 2px 2px 4px #000; animation: fadeInDown 1.5s ease-out;">
+    Welcome to Agrowide
+  </h1>
+  <p style="font-size: 1.2rem; margin: 20px 0; max-width: 600px; animation: fadeInDown 2s ease-out;">
+    Quality Seeds, Fertilizers & Pesticides that Boost Your Farm's Productivity
+  </p>
+  <a href="#products" style="
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: fadeInUp 2.5s ease-out;
+  ">
+    Explore Products
+  </a>
+  </section>
 <!-- Header Start -->
 <header style="display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; background-color: #0f4c5c; color: white; font-family: Arial, sans-serif; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <!-- Logo and Site Name -->
