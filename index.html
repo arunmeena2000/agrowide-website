@@ -1,69 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Agrowide - Grow With Confidence</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-    }
-    nav {
-      background-color: #2E8B57;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .hero {
-      height: 80vh;
-      background-image: url('https://images.unsplash.com/photo-1600986603152-d962438464a4?auto=format&fit=crop&w=1050&q=80');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-shadow: 1px 1px 4px black;
-    }
-    .hero h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 20px;
-    }
-    .hero a {
-      margin-top: 20px;
-      background-color: #ffffffcc;
-      color: #2E8B57;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  </style>
+  <title>Agrowide</title>
 </head>
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="contact.html">Contact</a>
+    <a href="#about">About</a> |
+    <a href="#products">Products</a> |
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="hero">
-    <h1>Welcome to Agrowide</h1>
-    <p>Your Trusted Partner in Agriculture</p>
-    <a href="products.html">Explore Products</a>
+  <h1>Welcome to Agrowide</h1>
+
+  <h2 id="about">About Agrowide</h2>
+  <p>Agrowide is a trusted name in agricultural inputs like seeds, fertilizers, and pesticides. We aim to support Indian farmers with quality products and honest service.</p>
+
+  <h2 id="products">Our Products</h2>
+  <div>
+    <h3>🌾 Organic Wheat Seeds</h3>
+    <p>High-quality certified wheat seeds for better yield.</p>
   </div>
+
+  <div>
+    <h3>💊 Nitrogen Fertilizer (Urea)</h3>
+    <p>Helps boost crop growth and yield.</p>
+  </div>
+
+  <div>
+    <h3>🐛 Neem-based Pesticide</h3>
+    <p>Eco-friendly pest control solution for your crops.</p>
+  </div>
+
+  <h2 id="contact">Contact Us</h2>
+  <form action="https://formspree.io/f/mzzvrkeo" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+    <label>Message:</label><br>
+    <textarea name="message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
 
 </body>
 </html>
