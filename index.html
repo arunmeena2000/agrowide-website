@@ -1,91 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="oykXHSsxRu6ZhAhMMmK5n0i9MA95PduwxmLx0Y9MiJc" />
-  <title>Agrowide: Your One-Stop Shop for Seeds, Fertilizers & Crop Protection</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="logo.png" type="image/png">
-
-<meta property="og:title" content="Agrowide - Quality Seeds & Fertilizers">
-<meta property="og:description" content="Top-quality agricultural products from Agrowide.">
-<meta property="og:image" content="https://arunmeena2000.github.io/agrowide-website/logo.png">
-<meta property="og:url" content="https://arunmeena2000.github.io/agrowide-website/">
-  <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Leaf_icon.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrowide - Quality Seeds, Fertilizers & Pesticides</title>
   <style>
-  /* Loader (jo page load hone tak ghoomega) */
-  #loader {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
 
-  .spinner {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #28a745;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 1s linear infinite;
-  }
+    /* Welcome Section */
+    #welcome {
+      background: url('https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
 
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+    #welcome h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+    }
 
-  /* Fade-in animation */
-  @keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* Jab page load ho jaye, loader ko hata do */
-  body.loaded #loader {
-    display: none;
-  }
+    /* Home Section */
+    #home {
+      padding: 50px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
   </style>
 </head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agrowide - Agriculture Solutions</title>
-  <style>
-    <style>
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+<body>
 
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-</style>
-    
-</head>
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h1>Welcome to Agrowide</h1>
+    <p>Empowering Farmers with Quality Agriculture Products</p>
+  </section>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h2>Home Page</h2>
+    <p>Yahan se aapke product, contact form, about etc. start honge.</p>
+  </section>
+
+  <!-- Auto Scroll Script -->
+  <script>
+    setTimeout(function () {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+    }, 3000); // 3 seconds
+  </script>
+
+</body>
+</html>
 <body>
   <!-- Loader (page load hone tak dikhne wala ghoomta circle) -->
 <div id="loader">
